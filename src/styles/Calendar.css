@@ -1,0 +1,111 @@
+.calendar {
+  margin: 0 auto;
+  width: 70%;
+  background: linear-gradient(to bottom, #aff08c, #d2b48c);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  color: rgb(98, 98, 97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  background: linear-gradient(to bottom,#f0e68c, #d2b48c);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.calendar-header button:hover {
+  background: linear-gradient(to bottom, #a0522d, #8b4513);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100px;
+}
+
+.day-number {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-content {
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 0 5px;
+  border-radius: 8px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendar-day:hover {
+  background: linear-gradient(to bottom, #bef08c, #94d28c);
+  color: #fff;
+}
+
+.in-month {
+  background: linear-gradient(to bottom, #f0e68c, #d2b48c);
+  color: #fff;
+}
+
+.not-in-month {
+  visibility: hidden;
+}
+
+.calendar-day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-list li {
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 0 5px;
+  background: #f0e68c;
+  border-radius: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
